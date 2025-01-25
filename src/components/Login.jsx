@@ -154,7 +154,9 @@ const Login = () => {
                 </div>
               )}
               <div className="email-input pb-2">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email" className="email-input-field">
+                  Emaillll
+                </label>
                 <br />
                 <input
                   type="email"
@@ -166,7 +168,7 @@ const Login = () => {
                 />
               </div>
               <div className="password-input pb-2">
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">Passwordd</label>
                 <br />
                 <input
                   type="password"
