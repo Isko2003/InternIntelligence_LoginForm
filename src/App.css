@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.right-banner {
+  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.left-banner img {
+  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.sign-up-change {
+  opacity: 0.8;
+}
+.order-1 {
+  opacity: 1;
+}
