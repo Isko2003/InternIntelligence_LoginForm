@@ -32,7 +32,7 @@ const ForgotPassword = () => {
 
   return (
     <div className="w-[100%] flex justify-center items-center h-[100vh] mx-auto bg-white">
-      <div className="forgot-password-form w-[40%] bg-gray-100 p-8 rounded-lg shadow-lg">
+      <div className="forgot-password-form lg:w-[40%] bg-gray-100 p-8 rounded-lg shadow-lg">
         <h1 className="text-2xl font-bold pb-4">Forgot Password</h1>
         <p className="text-gray-500 pb-4">
           Enter your email address and we will send you a password reset link.
@@ -51,16 +51,18 @@ const ForgotPassword = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <button
-            type="submit"
-            className="bg-purple-500 text-white w-full p-2 rounded hover:bg-purple-600 cursor-pointer"
-          >
-            Send Reset Email
-          </button>
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              className="bg-purple-500 text-white lg:w-[60%] lg:p-2 p-1 w-[140px] rounded hover:bg-purple-600 cursor-pointer"
+            >
+              Send Reset Email
+            </button>
+          </div>
         </form>
         <Link to={"/"}>
-          <div className="pt-4">
-            <button className="bg-green-500 text-white mt-4 rounded cursor-pointer p-2">
+          <div className="pt-4 flex justify-center">
+            <button className="bg-green-500 text-white mt-4 rounded cursor-pointer lg:p-2 p-1">
               Go Back To the Sign In Form
             </button>
           </div>
