@@ -41,10 +41,3 @@
 .left-banner img {
   transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
 }
-
-.sign-up-change {
-  opacity: 0.8;
-}
-.order-1 {
-  opacity: 1;
-}

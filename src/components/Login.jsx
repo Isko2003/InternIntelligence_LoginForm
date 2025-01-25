@@ -120,23 +120,23 @@ const Login = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="flex justify-center bg-gray-500">
-      <div className="w-[85%] flex justify-center items-center h-[100vh] mx-auto bg-white">
-        <div className="left-banner w-[50%] h-[100vh]">
+    <section className="flex justify-center bg-gray-500 h-[100vh]">
+      <div className="w-[85%] flex-col lg:flex-row lg:flex justify-center items-center h-[100vh] mx-auto bg-white">
+        <div className="left-banner w-[100%] lg:w-[50%] h-[30vh] lg:h-[100vh]">
           <img
             src="/imgs/form-img.webp"
             alt="form-img"
-            className={`h-[100%] object-cover ${
+            className={`h-[100%] object-cover w-[100%] ${
               isSignUp ? "order-[1] sign-up-change" : "order-[0]"
             }`}
           />
         </div>
         <div
-          className={`right-banner w-[50%] ps-12 h-[100vh] ${
+          className={`right-banner w-[100%] lg:w-[50%] ps-12 pt-7 lg:pt-0 h-[60vh] lg:h-[100vh] ${
             isSignUp ? "order-[-1]" : "order-1"
           }`}
         >
-          <div className="login-form-wrapper flex items-center h-[100vh] bg-white">
+          <div className="login-form-wrapper flex items-center h-[60vh] lg:h-[100vh] bg-white">
             <div className="login-form w-[85%]">
               <h1 className="font-bold text-3xl pb-2">
                 {isSignUp ? "Sign Up" : "Log In"}
