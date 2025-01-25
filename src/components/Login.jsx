@@ -154,7 +154,7 @@ const Login = () => {
                 </div>
               )}
               <div className="email-input pb-2">
-                <label htmlFor="email">Emaill</label>
+                <label htmlFor="email">Email</label>
                 <br />
                 <input
                   type="email"
